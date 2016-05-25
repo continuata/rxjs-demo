@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Rx for JavaScript Rocks!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <style>
+    canvas {
+      background-color: #cccccb;
+    }
+
+    html  {
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Shared Whiteboard</h1>
+      </div>
+      <div class="pull-left controls-group">
+       <label>Colour:</label>
+       <input id="colour" value="#df4b26">
+     </div>
+     <button class="pull-right btn btn-primary" id="clear">
+      Clear Canvas
+    </button>
+    <div class="row-fluid">
+      <canvas id="tutorial" width="640" height="480"></canvas>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.lite.compat.min.js"></script>
+  <script src="rx.firebase.js"></script>
+
+  <script src="index.js"></script>
+  </body>
+</html>
